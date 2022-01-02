@@ -1,0 +1,482 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wapper {
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #f9f9f9;
+    /* z-index: 999;
+    position: fixed; */
+}
+
+.container {
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    margin: 0 30px;
+    display: flex;
+    justify-content: left;
+    justify-items: center;
+    background-color: #f9f9f9;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container .logo {
+    padding: 6.6px 0;
+    /* padding: 22.6px 0; */
+    margin-right: 40px;
+}
+
+.container .logo img {
+    max-width: 300px;
+    height: auto;
+}
+
+.container .logo h2 {
+    color: red;
+    font-weight: 900;
+    align-items: center;
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.container ul.main-menu {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container ul.main-menu li {
+    position: relative;
+    cursor: pointer;
+}
+
+ul.main-menu>li>a {
+    color: #000;
+    line-height: 80px;
+    /* margin: 0 10px; */
+    font-size: 14px;
+    margin-left: 10px;
+    text-transform: uppercase;
+
+}
+
+ul.main-menu>li:hover>a {
+    color: red;
+}
+
+ul.main-menu li i {
+    margin-right: 10px;
+}
+
+ul.main-menu ul.sub-menu {
+    background: #fff;
+    position: absolute;
+    box-shadow: 0 0 2px #ccc;
+    min-width: 200px;
+    /* right: -14px; */
+    display: none;
+}
+
+ul.sub-menu-sl {
+    width: 230px;
+}
+
+ul.main-menu li:hover ul.sub-menu {
+    display: block;
+}
+
+ul.main-menu ul.sub-menu li {
+    border-bottom: 1px solid #ccc;
+
+}
+
+ul.main-menu ul.sub-menu li a {
+    font-size: 12px;
+    display: block;
+    color: #000;
+    margin-left: 15px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+}
+
+ul.main-menu ul.sub-menu>li:hover {
+    border-bottom: 1px solid rgb(237, 237, 237);
+
+}
+
+ul.main-menu ul.sub-menu>li:hover>a {
+    color: red;
+}
+
+.header-search {
+    text-align: center;
+    position: relative;
+    flex: 1;
+}
+
+.header-icon {
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 30px;
+}
+
+.header-search a {
+    margin: 0 10px;
+    text-transform: uppercase;
+
+}
+
+.header-search a i {
+    color: #000;
+    top: 30px;
+    font-size: 23px;
+}
+
+.header-search a:focus form {
+    display: block;
+}
+
+.header-icon form {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    left: -265px;
+    top: 50px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: none;
+} 
+
+.header-icon form input {
+    float: left;
+    line-height: 30px;
+    outline: none;
+    width: 100%;
+}
+
+.header-icon form button {
+    cursor: pointer;
+    position: absolute;
+    padding: 4px 8px;
+    right: 0;
+}
+
+
+.header-icon form button i {
+    font-size: 16px;
+    padding: 3px 6px;
+}
+
+.header-icon form button:hover i,
+.header-icon form button:hover {
+    color: #fff;
+    background-color: red;
+}
+
+
+.header-icon .icon-search i {
+    font-size: 18px;
+}
+
+/* SLIDER */
+
+.slider {
+    padding-top: 33%;
+    background: url('../img/slider.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container-buttom {
+    background-color: #f9f9f9;
+    height: 44px;
+    padding: 0 12px;
+    box-shadow: 0 0 1px rgb(160, 160, 160);
+    margin-bottom: 20px;
+}
+
+.container-buttom ul {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container-buttom ul li { 
+    padding: 0 5px;
+    text-align: center;
+
+}
+
+.container-buttom ul li a {
+    font-size: 13px;
+    line-height: 44px;
+    color: black;
+    font-family: bold;
+    text-transform: uppercase;
+
+}
+
+.container-buttom ul li a:hover {
+    color: red;
+}
+
+
+/* card */
+.card {
+    padding-bottom: 30px;
+}
+
+.cards {
+    margin-bottom: 100px;
+}
+
+.card-top {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    position: relative;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+.card-top::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 6px;
+    background: red;
+    top: 2px;
+}
+
+.card-top h2 {
+    color: red;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.card-top h2:hover {
+    color: #000;
+}
+
+.card-top button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #939598;
+    cursor: pointer;
+}
+
+.card-top button:hover {
+    background-color: red;
+}
+
+ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+ul.products li {
+    flex-basis: 15%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+ul.products li:hover {
+    border: 1px solid rgb(150, 150, 150);
+    box-shadow: 3px 3px 10px rgb(150, 150, 150);
+}
+
+ul.products li img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding-top: 10px;
+}
+
+.product-name {
+}
+
+.product-info .product-name {
+    color: #000;
+    font-size: 12px;
+}
+
+.product-info a:hover {
+    color: red;
+}
+
+.product-price {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #f2f2f2;
+    padding-bottom: 100px;
+}
+
+.footer-list {
+    padding-top: 30px;
+
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-top span {
+    font-size: 12px;
+    align-items: center;
+    line-height: 34px;
+    margin-right: 30px;
+}
+
+.footer-top form {
+    width: 600px;
+    position: relative;
+}
+
+.footer-top form input {
+    border: 1px solid #ccc;
+    padding: 8px 270px 8px 15px;
+    box-shadow: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.footer-top form button {
+    background-color: #000;
+    padding: 9px 0;
+    color: #fff;
+    position: absolute;
+    outline: 1px solid #000;
+    width: 140px;
+    transition: all .3s;
+    cursor: pointer;
+    right: 0;
+}
+
+.footer form input:focus {
+    outline: 1px solid rgb(109, 109, 255);
+
+}
+
+.footer-top form button:hover {
+    background: red;
+    outline: 1px solid red;
+}
+
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer-icon li {
+    width: 140px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-icon li i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footer-icon li a {
+    color: #000;
+    font-weight: 300;
+}
+
+.footer-icon li:hover a {
+    color: red;
+}
+
+.footer-icon li:hover i {
+    color: red;
+}
+
+.footer-bottom {
+    position: relative;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item {
+    position: relative;
+}
+
+.footer-item h4::before   {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    top: 25px;
+}
+
+.footer-item li {
+    margin-top: 25px;
+}
+
+.footer-item li i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footer-item li a {
+    color: #000;
+}
+
+.footer-item li a:hover {
+    color: red;
+}
+
+
+.license {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #dddddd ;
+}
+
+.license h3 {
+    font-family: Arial;
+    font-weight: 300;
+}
